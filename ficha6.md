@@ -15,29 +15,33 @@ Codificación.
 ---
 3. Procedimiento. Comando o herramienta y explicación:
 
-|Parte del comando o paso|	Qué hace|
+|Herramienta|	Qué hace|
 | --- | --- |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| convertextream | pasa de hexadecimal a texto |
+
 ---
 
 4. Por qué lo hacemos así. ¿Cómo supisteis que estaba en hexadecimal? La cadena tiene 20 caracteres: ¿cuántas letras esperáis obtener y por qué? Relacionadlo con el caso guiado 4.
 
 Para investigar. La palabra que obtenéis es el apellido de una persona que enunció un principio muy importante en criptografía. ¿Quién era y qué dice ese principio?
+Sabemos que es hexadecimal debido a que tiene letras que van de la a a la f y del 0 al 9.
+Lo que hace hexadecimal será pasar el texto a un lenguaje mas próximo al binario por lo que su longitud dependerá de la longitud de la palabra o el texto.
+Kerckhoffs fue un criptógrafo holandés que fue el primero en realizar ensayos de criptografía militar. Su principio fue Establecer que todo sistema criptográfico debe ser seguro incluso si todo el sistema, excepto la clave, es de conocimiento público "Lo único que debe permanecer oculto es la clave".
+
 
 ---
 
 5. Uso de la IA
 
 Pregunta que le hicimos	Qué aprendimos	¿Se equivocó? ¿Cómo lo comprobamos?
+No sea utilizado la IA
 
 ---
 
-6. Flag: flag{...}
+6. Flag: flag{Kerckhoffs}
 
 ---
 7. Verificación
+Lo verificaremos debido a que al pasar el código por distintos decodificadores y la terminal y todos dan el mismo resultado.
 
 ---
