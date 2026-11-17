@@ -5,7 +5,7 @@
 Hash
 
 ## 2. Concepto.  
-**¿En qué se diferencia SHA-1 de MD5 en longitud de salida? ¿Se considera seguro SHA-1 hoy? ¿Por qué?**
+**¿En qué se diferencia SHA-1 de MD5 en longitud de salida? ¿Se considera seguro SHA-1 hoy? ¿Por qué?**  
 SHA-1 genera una salida de 160 bits con una longitud de 40 caracteres, más larga que los 128 bits con 32 caracteres de MD5.  
 No se considera seguro hoy en día para datos que requieran una seguridad avanzada. Esto se debe a que se encontraron algoritmos para generar colisiones de hashes; es decir, que dos archivos con contenidos distintos tengan el mismo exacto hash.
 
@@ -19,7 +19,7 @@ No se considera seguro hoy en día para datos que requieran una seguridad avanza
 | Sha1sum | Es la herramienta encargada de calcular el hash utilizando el algoritmo SHA-1 |
 
 ## 4. Por qué lo hacemos así.  
-**¿Por qué el guion y los espacios de la salida no forman parte de la flag? Calculad también el MD5 de la misma contraseña y comparad las dos salidas.**
+**¿Por qué el guion y los espacios de la salida no forman parte de la flag? Calculad también el MD5 de la misma contraseña y comparad las dos salidas.**  
 Los espacios son solo separadores y el guión informa que se ha leido desde la entrada estándar en lugar de un archivo.
 
 **Comparación SHA-1/MD5**  
