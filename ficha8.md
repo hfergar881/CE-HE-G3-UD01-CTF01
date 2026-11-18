@@ -14,7 +14,10 @@ SeguridadPorOscuridadNoFunciona.
 ---
 3. Procedimiento. Comando o herramienta y explicación:
 
-Parte del comando o paso	Qué hace
+|Parte del comando o paso|	Qué hace|
+|...|...|
+|echo -n "FrthevqnqCbeBfphevqnqAbShapvban"|Imprime la cadena de texto proporcionada en la salida estándar. El modificador -n evita que se añada un salto de línea al final (newline), manteniendo el flujo de datos limpio.|
+| tr 'A-Za-z' 'N-ZA-Mn-za-m'|Realiza una sustitución de caracteres basada en el cifrado ROT13. Toma cada letra del alfabeto y la desplaza 13 posiciones, lo que en este caso permite descifrar el texto oculto.|
 
 ---
 
@@ -44,10 +47,11 @@ Pregunta que le hicimos	Qué aprendimos	¿Se equivocó? ¿Cómo lo comprobamos?
 - Como podriamos romper el cifrado si no sabemos que es rot13.
 No se equivoco en ninguna pregunta debido a que revisamos las respuesta por internet.
 ---
-6. Flag: flag{...}
+6. Flag: flag{SeguridadPorOscuridadNoFunciona}
 
 ---
 
 7. Verificación. Volved a aplicar ROT13 al resultado. ¿Qué obtenéis?
+Obtendremos la misma cadena porque es un cifrado bidireccional. Es decir, que da el mismo resultado al cifrar y al descifrar con la misma clave.
 
 ---
