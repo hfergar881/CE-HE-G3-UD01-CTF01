@@ -17,21 +17,18 @@ Codificación; no encripta la información, solo cambia la forma de representarl
 | --- | --- |
 | convertstring.com | Decodifica cadenas hexadecimales a texto |
 
-## 4. Por qué lo hacemos así
+## 4. Por qué lo hacemos así.
 **¿Cómo supisteis que estaba en hexadecimal? La cadena tiene 20 caracteres: ¿cuántas letras esperáis obtener y por qué? Relacionadlo con el caso guiado 4.**  
 **Para investigar. La palabra que obtenéis es el apellido de una persona que enunció un principio muy importante en criptografía. ¿Quién era y qué dice ese principio?**  
 - Sabemos que es hexadecimal debido a que solo contiene letras de la a a la f y los números del 0 al 9. Se relaciona con el caso 4 porque también tratamos una codificación, en la que la longitud del resultado también se podía conocer antes de la conversión; aunque con una correspondencia distinta.
 - La longitud del resultado debe ser la mitad de la longitud de la cadena hexadecimal, es decir, 10 caracteres, ya que cada caracter unicode se representa con 2 caracteres hexadecimales.
 - Kerckhoffs fue un criptógrafo holandés que fue el primero en realizar ensayos de criptografía militar. Su principio fue establecer que todo sistema criptográfico debe ser seguro incluso si todo el sistema, excepto la clave, es de conocimiento público "Lo único que debe permanecer oculto es la clave".
 
-## 5. Uso de la IA
+## 5. Uso de la IA.
 No se ha utilizado la IA.
 
-### 6. Flag:
+## 6. Flag:
 flag{Kerckhoffs}
 
----
-7. Verificación
-Lo verificaremos debido a que al pasar el código por distintos decodificadores y la terminal y todos dan el mismo resultado.
-
----
+## 7. Verificación.
+Lo verificamos viendo que al pasar el código por distintos decodificadores y comandos de la terminal todos daban el mismo resultado.
