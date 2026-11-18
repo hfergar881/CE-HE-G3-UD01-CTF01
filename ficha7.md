@@ -7,7 +7,7 @@ Codificación
 ## 2. Concepto. ¿En qué se diferencia Base32 de Base64? Comparad el alfabeto y el relleno con =.
 |  | Base64 | Base32 |
 | --- | --- | --- |
-| **Caracteres que usa** | Longitud 64. Mayúsculas, minúsculas, dígitos, "+" y "/" | Longitud 32. Solo mayúsculas y dígitos 2-7 |
+| **Caracteres que usa** | Alfabeto de 64: Mayúsculas, minúsculas, dígitos, "+" y "/" | Alfabeto de 32: Solo mayúsculas y dígitos 2-7 |
 | **Relleno** | Hasta 2 | Hasta 6 |
 | **¿Usa minúsculas?** | Sí | No |
 
