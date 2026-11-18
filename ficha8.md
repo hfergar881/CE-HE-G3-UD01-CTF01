@@ -18,17 +18,31 @@ Parte del comando o paso	Qué hace
 
 ---
 
-4. Por qué lo hacemos así. ¿Por qué el cifrado César es inseguro? ¿Cuántas claves posibles tiene? ¿Cómo lo romperíais si no supierais que el desplazamiento es 13?
+4. Por qué lo hacemos así. ¿Por qué el cifrado César es inseguro?  
+Al tener pocas claves posibles, es vulnerable a ataques de fuerza bruta.
+Otro problema es la frecuencia de las letras, por ejemplo en el lenguaje español se repiten las letras "a" y "e".
+Analizando un texto largo, podemos observar qué letras aparecen más veces y deducir cuáles podrían corresponder a las letras originales.
+¿Cuántas claves posibles tiene?
+Si se usa el alfabeto inglés solamente existen 25 desplazamientos posibles (sin contar el desplazamiento 0, esto significa que no hemos desplazado ninguna letra)
+Por ejemplo desplazamiento 1 es A -> B.
 
+¿Cómo lo romperíais si no supierais que el desplazamiento es 13?
+1. Analizar el texto.
+2. Probar todos los desplazamientos posibles.
+3. Usar análisis de frecuencia.
+4. Automatizar con python.
 
 Para investigar. El texto descifrado está relacionado con el reto 6. ¿Qué relación tiene con el principio de Kerckhoffs?
+Ambos retos demuestran que si el método es público y no existe una clave secreta, la seguridad es nula. El principio de Kerckhoffs exige separar el algoritmo de la clave, al fallar en esto, tanto el Reto 6 como el Reto 8 se rompen en cuanto se reconoce el sistema.
 
 ---
 
 5. Uso de la IA
 
 Pregunta que le hicimos	Qué aprendimos	¿Se equivocó? ¿Cómo lo comprobamos?
-
+- ¿Por qué el c.cesar es considerado inseguro en la actualidad?
+- Como podriamos romper el cifrado si no sabemos que es rot13.
+No se equivoco en ninguna pregunta debido a que revisamos las respuesta por internet.
 ---
 6. Flag: flag{...}
 
