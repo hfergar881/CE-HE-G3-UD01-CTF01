@@ -19,10 +19,11 @@ Aunque visualmente el resultado pueda parecer muy complicado, un atacante puede 
 
 3. Procedimiento. Completad la tabla con cada capa:
 
-Capa	Lo que tenéis	Cómo reconocéis el formato	Comando	Resultado
-1	NTA2NTZl…			
-2				
-3		
+| Capa |	Lo que tenéis |	Cómo reconocéis el formato|	Comando	| Resultado |
+|---|---|---|---|---|
+|1|	NTA2NTZlNzQ2NTczNzQ2OTZlNjc0NTc0Njk2MzZm | Formato alfanumérico largo que suele terminar con uno o dos caracteres de relleno = y utiliza letras mayúsculas, minúsculas y números. | echo -n "NTA2NTZlNzQ2NTczNzQ2OTZlNjc0NTc0Njk2MzZm" | base64 -d | 50656e74657374696e674574696e673663	|		
+|2| 50656e74657374696e674574696e673663	| Cadena compuesta estrictamente por caracteres hexadecimales, con una longitud par.	|	echo "50656e74657374696e674574696e673663" xxd -r -p | PentestingEtico |	
+|3| PentestingEticoPentestingEtico	| Una palabra en texto plano legible en formato ASCII.	| echo -n "PentestingEtico" md5sum | c784ae85751ffee70b053ec8ea30c92a |
 
 ---
 
@@ -40,13 +41,14 @@ La regla fundamental es que las capas de codificación deben eliminarse en orden
 5. Uso de la IA
 
 Pregunta que le hicimos	Qué aprendimos	¿Se equivocó? ¿Cómo lo comprobamos?
+No nos ha hecho falta preguntarle a la IA.
 
 ---
 
-6. Flag: flag{...}
+6. Flag: flag{c784ae85751ffee70b053ec8ea30c92a}
 
 ---
 
 7. Verificación
-
+Funciona porque las codificaciones son operaciones reversibles y deterministas que simplemente cambian la representación de los datos de bytes a caracteres legibles. Al aplicar el proceso inverso exactamente en el orden contrario al que se cifró, logramos reconstruir la información original y calcular su huella digital de forma unívoca.
 ---
